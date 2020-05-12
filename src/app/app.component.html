@@ -61,7 +61,7 @@
         <div class="collection">
           <ng-container *ngFor="let q of quotes">
           <p class="collection-item" *ngIf="q.votes >0">
-            <span class="blue lighten-4 badge">7</span>
+            <span class="blue lighten-4 badge">{{q.votes}}</span>
             {{q.sentence}}<br />
             <span class="blue-text">{{q.author}}</span>
           </p>
@@ -73,7 +73,7 @@
         <div class="collection">
           <ng-container *ngFor="let q of quotes">
           <p class="collection-item" *ngIf="q.votes < 0">
-            <span class="blue lighten-4 badge">-2</span>
+            <span class="blue lighten-4 badge">{{q.votes}}</span>
             {{q.sentence}}<br />
             <span class="blue-text">{{q.author}}</span>
           </p>
