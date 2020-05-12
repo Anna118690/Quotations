@@ -1,5 +1,5 @@
 <!-- Nagłówek -->
-<app-navbar></app-navbar>
+<app-navbar title="The best sentences"></app-navbar>
 <!-- koniec nagłówka -->
 
 <div class="container q-container">
@@ -52,30 +52,9 @@
 
     <!-- Sekcja rankigów -->
     <div class="col s4">
-      <div class="col s12">
-        <h5>The best</h5>
-        <div class="collection">
-          <ng-container *ngFor="let q of quotes">
-          <p class="collection-item" *ngIf="q.votes >0">
-            <span class="blue lighten-4 badge">{{q.votes}}</span>
-            {{q.sentence}}<br />
-            <span class="blue-text">{{q.author}}</span>
-          </p>
-        </ng-container>
-        </div>
-      </div>
-      <div class="col s12">
-        <h5>The worst</h5>
-        <div class="collection">
-          <ng-container *ngFor="let q of quotes">
-          <p class="collection-item" *ngIf="q.votes < 0">
-            <span class="blue lighten-4 badge">{{q.votes}}</span>
-            {{q.sentence}}<br />
-            <span class="blue-text">{{q.author}}</span>
-          </p>
-        </ng-container>
-        </div>
-      </div>
+     <app-ranking [quotes] = "bestQuotes()" title="The best"></app-ranking>
+     <app-ranking [quotes] = "worstQuotes()" title="The worst"></app-ranking>
+      
     </div>
     <!-- Sekcja rankigów -->
   </div>
