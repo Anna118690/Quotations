@@ -3,32 +3,32 @@ import { Quotation } from './quotation';
 export const QUOTES: Quotation[] = [
   {
     author: 'Jonathan Carroll',
-    sentence: 'To, że milczę, nie znaczy, że nie mam nic do powiedzenia.',
+    sentence: 'The fact that I am silent, does not mean that I have nothing to say.',
     votes: -4,
   },
   {
     author: 'Suzanne Collins',
-    sentence: 'Masz w sobie tyle uroku co zdechła dżdżownica.',
+    sentence: 'You have as much charm as a dead earthworm.',
     votes: 2,
   },
   {
     author: 'George Eliot',
-    sentence: 'Nigdy nie jest za późno, by stać się tym, kim chcemy być.',
+    sentence: 'It is never too late to become what we want to be.',
     votes: 1,
   },
   {
     author: 'Stanisław Lem',
-    sentence: 'Bądź dobrej myśli, bo po co być złej.',
+    sentence: 'Be of good cheer, why bad?.',
     votes: null,
   },
   {
     author: 'Tove Jansson',
-    sentence: 'Mówienie tak bardzo przeszkadza w myśleniu.',
+    sentence: 'Speaking disturbs thinking so much.',
     votes: -8,
   },
   {
     author: 'Peter Lippert',
-    sentence: 'Życia nie można wybrać, ale można z niego coś zrobić.',
+    sentence: 'You can not choose life, but you can do something about it.',
     votes: null,
   },
 ];
