@@ -21,4 +21,9 @@ export class AppComponent {
     this.quotation = {author:'', sentence :'', votes: 0}; //resetuje obiekt quotation
   }
 
+  addVote(quotation: Quotation, value: number)
+  {
+    quotation.votes += value;
+  }
+
 }
