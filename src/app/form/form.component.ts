@@ -12,7 +12,7 @@ export class FormComponent  {
 
 
 
-  showForm = true;
+  showForm = false;
   quotation: Quotation= {author:'', sentence :'', votes: 0};
 
 

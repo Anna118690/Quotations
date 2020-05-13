@@ -3,12 +3,13 @@
 <!-- koniec nagłówka -->
 
 <div class="container q-container">
-  <!--Dodawanie cytatu-->
-  <button class="btn-floating teal add-button" >
-    <i class="material-icons">add</i>
-  </button>
 
- <app-form (newQuotation)="onNewQuotation($event)"></app-form>
+  <!--Dodawanie cytatu-->
+ <app-button customClasses= "btn-floating teal add-button" (click)="form.onSwitchForm()">
+   <i class="material-icons">add</i>
+</app-button>
+
+ <app-form #form (newQuotation)="onNewQuotation($event)"></app-form>
   <!-- Koniec dodawanie cytatu -->
 
   <div class="row">
@@ -27,12 +28,18 @@
             </div>
             <div class="card-action right-align">
               <span class="badge grey darken-2 left white-text">     {{q.votes}}</span>
-              <button class="btn blue mr-5" (click) = "addVote(q, +1)">
+
+              <app-button 
+                customClasses="btn blue mr-5" 
+                (clickButton) = "addVote(q, +1)">
                 <i class="material-icons">exposure_plus_1</i>
-              </button>
-              <button class="btn brown" (click) = "addVote(q, -1)">
+              </app-button>
+
+              <app-button 
+                customClasses="btn brown" 
+                (clickButton) = "addVote(q, -1)">
                 <i class="material-icons">exposure_neg_1</i>
-              </button>
+              </app-button>
             </div>
           </div>
          

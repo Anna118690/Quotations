@@ -6,6 +6,7 @@ import { FormsModule } from '@angular/forms';
 import { NavbarComponent } from './navbar/navbar.component';
 import { RankingComponent } from './ranking/ranking.component';
 import { FormComponent } from './form/form.component';
+import { ButtonComponent } from './button/button.component';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { FormComponent } from './form/form.component';
     AppComponent,
     NavbarComponent,
     RankingComponent,
-    FormComponent
+    FormComponent,
+    ButtonComponent
   ],
   imports: [
     BrowserModule,
